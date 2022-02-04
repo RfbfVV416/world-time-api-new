@@ -1,0 +1,10 @@
+spring:
+  profiles: prod
+  config:
+    import: configserver
+
+---
+spring:
+  profiles: local
+  config:
+    location: classpath:/config.yml
